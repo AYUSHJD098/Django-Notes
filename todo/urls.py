@@ -15,8 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from userdetail import views as udv
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('userdata.urls'))
+    path('', include('userdata.urls')),
+    path('register', udv.user_register, name='user_register' ),
+
 ]

@@ -20,7 +20,7 @@
                                     </div>
                                     <!--end of col-->
                                     <div class="col">
-                                        <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search topics or keywords">
+                                        <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search Note">
                                     </div>
                                     <!--end of col-->
                                     <div class="col-auto">
@@ -34,39 +34,27 @@
                     </div>
 </div>
 <br>
+{% for note1 in notes %}
 <div class="container">
     <div class="row justify-content-center">
         <div class="col">
             <div class="jumbotron">
-                <h1 class="display-4">Hello, world!</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Read More</a>
+                <h1 class="display-4">{{note1.title}}</h1>
+                <p class="lead">{{ note1.date }}</p>
+                <hr class="my-4">
+                <p class="lead">{{ note1.note }}</p>
+                <a class="btn btn-outline-info" href="{% url 'view_note'  pk=note1.id %}">Open</a>
               </div>
         </div>
     </div>
 </div>
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col">
-            <div class="jumbotron">
-                <h1 class="display-4">Hello, world!</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Read More</a>
-              </div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col">
-            <div class="jumbotron">
-                <h1 class="display-4">Hello, world!</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Read More</a>
-              </div>
-        </div>
-    </div>
-</div>
+{% endfor %}
+
+
+
+
+
+
 
 
 {% endblock %}

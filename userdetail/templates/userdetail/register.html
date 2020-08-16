@@ -1,0 +1,57 @@
+
+{% extends 'userdata/base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+
+
+
+<div class="container">
+ 
+    <div class="card bg-light">
+    <article class="card-body mx-auto" style="max-width: 400px;">
+        <h4 class="card-title mt-3 text-center">Create Account</h4>
+        <p class="text-center">Get started with your free account</p>
+        <p>
+          
+        </p>
+        <p class="divider-text">
+          
+        </p>
+        <form method='POST' action="" >
+            {% csrf_token %}
+        <div class="form-group input-group">
+           
+                {{ form.username }}
+        </div> <!-- form-group// -->
+        <div class="form-group input-group">
+            
+
+            {{ form.email|as_crispy_field  }}
+        </div> <!-- form-group// -->
+        <div class="form-group input-group">
+           
+             <!-- form-group// -->
+          
+        </div> <!-- form-group end.// -->
+        <div class="form-group input-group">
+           
+            {{ form.password1|as_crispy_field  }}
+        </div> <!-- form-group// -->
+        <div class="form-group input-group">
+           
+            {{ form.password2|as_crispy_field  }}
+        </div> <!-- form-group// -->                                      
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
+        </div> <!-- form-group// -->      
+        <p class="text-center">have an account? <a href="">Log In</a> </p>                                                                 
+    </form>
+    </article>
+    </div> <!-- card.// -->
+    
+    </div> 
+    <!--container end.//-->
+    
+
+{% endblock %}
