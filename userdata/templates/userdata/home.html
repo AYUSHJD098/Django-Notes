@@ -34,6 +34,7 @@
                     </div>
 </div>
 <br>
+{% if notes %}
 {% for note1 in notes %}
 <div class="container">
     <div class="row justify-content-center">
@@ -48,7 +49,23 @@
         </div>
     </div>
 </div>
+
 {% endfor %}
+{% else %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col">
+            <div class="jumbotron">
+                <h1 class="display-4">You haven't created any notes yet!</h1>
+                <p class="lead">Your notes will be displayed here <br> To create notes click button below!</p>
+                <p class="lead"></p>
+                <br>
+                <a class="btn btn-outline-info btn-lg btn-block" href="{% url 'create_note' %}">Create Note</a>
+              </div>
+        </div>
+    </div>
+</div>
+{% endif %}
 
 
 
