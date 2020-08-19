@@ -139,7 +139,7 @@ LOGIN_URL = 'user_login'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
-STATIC_URL = 'userdata/static/'
+STATIC_URL = '/static/'
 
 
 
@@ -148,6 +148,6 @@ MEDIA_URL ="/images/"
 
  
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'userdata/static'),
+    os.path.join(BASE_DIR, 'static/userdata'),
     
 ]
