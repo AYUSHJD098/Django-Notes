@@ -13,20 +13,10 @@
     <br/>
 	<div class="row justify-content-center">
                         <div class="col-12 col-md-10 col-lg-8">
-                            <form class="card card-sm" method="GET" action="/search">
+                            <form class="card card-sm">
                                 <div class="card-body row no-gutters align-items-center">
-                                    <div class="col-auto">
-                                        <i class="fas fa-search h4 text-body"></i>
-                                    </div>
-                                    <!--end of col-->
-                                    <div class="col">
-                                        <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search" id='search' name="search">
-                                    </div>
-                                    <!--end of col-->
-                                    <div class="col-auto">
-                                        <button class="btn btn-lg btn-success" type="submit">Search</button>
-                                    </div>
-                                    <!--end of col-->
+                                    <h1>Search result:</h1>
+                                    <a class='btn btn-lg btn-info btn-block' href="{% url 'home' user.id %}">Home</a>
                                 </div>
                             </form>
                         </div>
@@ -56,8 +46,8 @@
     <div class="row justify-content-center">
         <div class="col">
             <div class="jumbotron">
-                <h1 class="display-4">You haven't created any notes yet!</h1>
-                <p class="lead">Your notes will be displayed here <br> To create notes click button below!</p>
+                <h1 class="display-4">Note not found!</h1>
+                <p class="lead">Make sure you entered right keywords<br> To create notes click button below!</p>
                 <p class="lead"></p>
                 <br>
                 <a class="btn btn-outline-info btn-lg btn-block" href="{% url 'create_note' %}">Create Note</a>

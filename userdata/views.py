@@ -75,3 +75,18 @@ def update_note(request, pk):
         'notes': notes
     }
     return render(request, 'userdata/updatenote.html', context)
+
+
+
+@login_required
+def search_note(request):
+    search = request.GET['search']
+    notetitle =  note.objects.filter(title__icontains=search)
+    notenote =  note.objects.filter(note__icontains=search)
+    notes = notetitle.union(notenote)
+    context = {
+        'title': 'Search Note',
+        'notes': notes,
+       
+    }
+    return render(request, 'userdata/search.html', context)
