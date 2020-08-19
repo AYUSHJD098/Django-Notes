@@ -148,7 +148,7 @@ MEDIA_URL ="/images/"
 
  
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static/userdata'),
+    os.path.join(BASE_DIR, 'userdata/static/'),
     
 ]
 # igaugauigui
