@@ -26,7 +26,7 @@ SECRET_KEY = 'wo@t+n*m*o=!yqyyvnu6em!ard9h%ga#q)@p2*mdd4=!t-w50b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['django-notes098.herokuapp.com']
+ALLOWED_HOSTS = ['django-notes098.herokuapp.com', 'www.djangonotes.tk', 'djangonotes.tk']
 
 
 # Application definition
