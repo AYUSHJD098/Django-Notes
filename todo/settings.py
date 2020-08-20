@@ -26,7 +26,11 @@ SECRET_KEY = 'wo@t+n*m*o=!yqyyvnu6em!ard9h%ga#q)@p2*mdd4=!t-w50b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['django-notes098.herokuapp.com','djangonotes.tk', 'www.djangonotes.tk', '127.0.0.1']
+=======
+ALLOWED_HOSTS = ['django-notes098.herokuapp.com', 'www.djangonotes.tk', 'djangonotes.tk']
+>>>>>>> 09151c889922552c453a10fb4732c8607c95fc76
 
 
 # Application definition
@@ -153,4 +157,7 @@ STATICFILES_DIRS = [
     
 ]
 # igaugauigui
+<<<<<<< HEAD
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+=======
+>>>>>>> 09151c889922552c453a10fb4732c8607c95fc76
