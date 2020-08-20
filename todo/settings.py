@@ -27,7 +27,7 @@ SECRET_KEY = 'wo@t+n*m*o=!yqyyvnu6em!ard9h%ga#q)@p2*mdd4=!t-w50b'
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['django-notes098.herokuapp.com','djangonotes.tk', 'www.djangonotes.tk', '127.0.0.1']
+ALLOWED_HOSTS = ['django-notes098.herokuapp.com','djangonotes.tk', 'www.djangonotes.tk']
 
 
 
