@@ -155,8 +155,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'userdata/static/'),
     
 ]
-# igaugauigui
-<<<<<<< HEAD
+
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-=======
->>>>>>> 09151c889922552c453a10fb4732c8607c95fc76
+
